@@ -20,7 +20,14 @@ class Vehicle {
 }
 
 const bus1 = new Vehicle(
-  { length: 20, height: 3, widths: 1 },
+  { length: 20, height: 3, widths: 100 },
+  "MAN",
+  "K20",
+  "2021, 11, 17"
+);
+
+const bus2 = new Vehicle(
+  { length: 20, height: 30, widths: 1 },
   "MAN",
   "K20",
   "2021, 11, 17"
@@ -30,6 +37,8 @@ console.log("bus1 :>> ", bus1);
 
 console.log(bus1.getMaxSise());
 console.log(bus1.getAge());
+
+console.log(bus2.getMaxSise());
 
 class PassengerTransport extends Vehicle {
   constructor(
